@@ -1,7 +1,8 @@
 {
   "name": "ping-pong-game",
   "version": "1.0.0",
-  "description": "Ever heard of 'Ping Pong'? You might have; if not go search on the web.\nWell, we will be making a smaller and easier version of this game.",
+  "description": "It's a simple ping-pong-game",
+  "author": "mayank yadav",
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
