@@ -1,3 +1,52 @@
-body {
-  font-family: sans-serif;
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  overflow: hidden;
+}
+
+#app{
+position: relative;
+width: 100vw;
+height: 100vh;
+}
+
+.paddle{
+  --position: 50;
+
+  height: 1.5vh;
+  width:  15vw;
+  position: absolute;
+  left: calc(var(--position) * 1vw);
+  transform: translateX(-50%);
+  border-radius: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#top{
+  top:1vh;
+  background-color: rgb(104, 91, 221);
+}
+
+#bottom{
+  bottom: 1vh;
+  background-color: rgb(220, 83, 227);
+}
+
+#ball{
+  --x: 50;
+  --y: 50;
+
+  position: absolute;
+  left: calc(var(--x) * 1vw);
+  top: calc(var(--y) * 1vh);
+  transform: translate(-50%, -50%);
+  width: 2.5vw;
+  height: 2.5vw;
+  background-color: rgb(222, 78, 78);
+  border-radius: 50%;
 }
